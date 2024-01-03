@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+ow6@5r^i6xf*fqq53bdyi-5f^(17px+aeh5+5tf%#b&&05pc$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'products',
     'rest_authtoken',
     'drf_yasg',
-    "drf_spectacular", 
+    "drf_spectacular",
 ]
 
 MIDDLEWARE = [
@@ -138,7 +138,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
-    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema", 
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
 
 SPECTACULAR_SETTINGS = {
